@@ -6,7 +6,7 @@ const productSchema = new Schema({
         type: String,
         required: true,
         minLength: 3,
-        maxLenghth: 100
+        maxLength: 100
     },
 
     price: {
@@ -46,4 +46,7 @@ const productSchema = new Schema({
         required: true,
         default: false
     }
-})
+});
+
+// Export model
+module.exports = mongoose.model('Product', productSchema);
