@@ -45,6 +45,11 @@ const productSchema = new Schema({
         type: Boolean,
         required: true,
         default: false
+    },
+
+    createdAt: {
+        type: Date,
+        default: Date.now
     }
 });
 
