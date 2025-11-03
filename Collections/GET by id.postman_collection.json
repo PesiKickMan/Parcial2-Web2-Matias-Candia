@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "f72b2ac3-c042-4810-8126-d9d1bd2b9a81",
+		"name": "GET by id",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48111952"
+	},
+	"item": [
+		{
+			"name": "Palo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/products/6908fbecbe78df79ccb7a5d6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products",
+						"6908fbecbe78df79ccb7a5d6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "5534281e-7d27-4de0-9858-906df0a870af",
+		"name": "DELETE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48111952"
+	},
+	"item": [
+		{
+			"name": "Borrar palo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/products/6908fbecbe78df79ccb7a5d6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products",
+						"6908fbecbe78df79ccb7a5d6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

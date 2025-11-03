@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "90b7d1ff-ca68-4df3-88f1-4f2e7ce3ebd5",
+		"name": "PUT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48111952"
+	},
+	"item": [
+		{
+			"name": "Editar stock",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"stock\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/products/6908fbecbe78df79ccb7a5d6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products",
+						"6908fbecbe78df79ccb7a5d6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
