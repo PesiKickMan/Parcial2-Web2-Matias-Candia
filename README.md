@@ -42,6 +42,37 @@ npm start
 node index.js
 ```
 
+Por defecto el servidor monta las rutas bajo el prefijo `/api`. Por ejemplo, para productos la ruta base es `/api/products`.
+
+Endpoints principales
+--------------------
+- GET /api/products
+  - Lista todos los productos.
+
+- GET /api/products/:id
+  - Obtiene un producto por su id.
+
+- POST /api/products
+  - Crea un nuevo producto.
+  - Body (JSON) - ejemplo:
+
+```json
+{
+  "name": "Espada maestra",
+  "price": 9999,
+  "category": "Armas",
+  "level": 100,
+  "stock": 1,
+  "rarity": "Legendario",
+  "isKeyItem": false
+}
+```
+- DELETE /api/products/:id
+    - Elimina el producto correspondiente al id.
+
+- PUT /api/products/:id
+    - Actualiza un producto.
+
 Resumen del modelo `Product`
 ----------------------------
 Campos principales (definidos en `models/product.model.js`):
@@ -54,6 +85,10 @@ Campos principales (definidos en `models/product.model.js`):
 - `rarity` (String, enum: Común, Poco Común, Raro, Épico, Legendario)
 - `isKeyItem` (Boolean)
 - `createdAt` (Date, default: Date.now)
+
+Licencia
+--------
+ISC
 
 Autor
 -----
